@@ -1,0 +1,773 @@
+/* ==================================== */
+
+@font-face {
+    font-family:'greek' ;
+    src: url(fonts/greek.ttf);
+}
+@font-face {
+    font-family:'arabic' ;
+    src: url(fonts/arab3end.ttf);
+}
+@font-face {
+    font-family:'indic' ;
+    src: url(fonts/Almost\ Sanskrit\ Taj.ttf);
+}
+
+@font-face {
+    font-family:'sindentosa' ;
+    src: url(fonts/Sindentosa.ttf);
+}
+@font-face {
+font-family:'GeraldinePersonalUseItalic-PK12m';
+src: url(fonts/GeraldinePersonalUseItalic-PK12m.ttf);
+}
+@font-face {
+font-family:'anandablack';
+src: url(fonts/Ananda\ Black\ Personal\ Use.ttf);
+}
+@font-face {
+font-family:'Ananda';
+src: url(fonts/Ananda\ Personal\ Use.ttf);
+}
+
+@font-face {
+    font-family:'myhindi';
+    src: url(fonts/MyhindiHindigyan-GW1a.ttf);
+    }
+    
+@font-face {
+    font-family:'NatureBeautyPersonalUse-9Y2DK';
+    src: url(fonts/NatureBeautyPersonalUse-9Y2DK.ttf)
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }  
+.deer{
+    background-image: linear-gradient(to right,  #fdf9f5,  #f1ccd5);
+}
+
+
+.navb{
+    text-align: right;
+    display: flex;
+    /* align-items: ; */
+    justify-content: center;
+
+    /* margin-left: 20%; */
+}
+.navbar{
+    text-align: end;
+}
+.nav-link{
+   
+    /* color: black; */
+    font-weight: bold;
+    font-size: 27px;
+    /* margin-right: 10px;
+    margin-left: 10px; */
+}
+
+
+    .navbar {
+        background-image: linear-gradient(to right,  #fdf9f5,  #f1ccd5);
+        /* font-family: 'GeraldinePersonalUseItalic-PK12m',sans-serif; */
+        /* font-family: 'Ananda','anandablack',sans-serif; */
+        font-family: 'Kanit', sans-serif;
+        /* text-align: end; */
+        font-size: 30px;
+        
+    }
+    .navbar a{
+        margin: 0 5px;
+        padding: 0 5%;
+    }
+    
+ 
+    .container{
+        font-family: 'Times New Roman', italic;
+     
+    }
+    .div2{
+        background-color: #df94a7;
+
+    }
+    .div4{
+        background-color: #df94a7;
+
+    }
+    /* ================================== */
+    .welcome{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Times New Roman', italic;
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(assets/bg.avif);
+        color: aliceblue;
+        background-repeat: no-repeat;
+      
+        
+        background-size: cover;
+        background-position: center;
+        
+      
+    }
+    .welcome2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Times New Roman', italic;
+        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(assets/tutorials2000.jpg);
+        color: aliceblue;
+        background-repeat: no-repeat;
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+        
+    }
+.welcome h1{
+    padding-top: 10% ;
+    font-size: 150px;
+    font-family: 'sindentosa',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.arabcwelcom h1{
+    /* padding-top: 10% ; */
+    font-size: 100px;
+    font-family: 'sindentosa',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.greewelcom{
+    font-family: 'Times New Roman', italic;
+    /* background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)); */
+    /* color: aliceblue; */
+    background-repeat: no-repeat;
+    /* height: auto; */
+    /* padding: 10%; */
+    background-size: cover;
+  
+}
+.greewelcom h1{
+
+    font-size: 100px;
+    font-family: 'sindentosa',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.arabcwelcom{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    font-family: 'Times New Roman', italic;
+    /* background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)); */
+    /* color: aliceblue; */
+    background-repeat: no-repeat;
+    /* height: auto; */
+    /* padding: 10%; */
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.welcome2 h1{
+    padding-top: 10% ;
+    font-size: 100px;
+    font-family: 'sindentosa',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.welcome h5{
+    padding-bottom: 10%;
+}
+.welcome2 h5{
+    padding-bottom: 10%;
+}
+
+
+@media only screen and (max-width: 980px) {
+    .welcome2 h1{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .welcome h1{
+        font-size: 90px;
+    }
+    .welcome2 h1{
+        font-size: 90px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .welcome h1{
+        font-size: 70px;
+    }
+    .welcome2 h1{
+        font-size: 70px;
+    }
+}
+@media only screen and (max-width: 261px) {
+    .welcome h1{
+        font-size: 40px;
+    }
+    .welcome2 h1{
+        font-size: 40px;
+    }
+}
+    /* .============================== */
+    .arabicbox{
+        height: auto;
+        background: #ebc6cf;
+        border-radius: 20px;
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+    }
+    .greekbox{
+        height: auto;
+        background:  #ebc6cf;
+        border-radius: 20px;
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5); 
+    }
+    .indicbox{
+        height: auto;
+        background:  #ebc6cf;
+        border-radius: 20px;
+        box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5); 
+    }
+    .f1{
+    /* font-family:'GeraldinePersonalUseItalic-PK12m' ; */
+    font-family: 'Kanit', sans-serif;
+        font-size: 80px;
+    }
+    @media only screen and (max-width: 601px) {
+        .f1{
+            font-size: 50px;
+        }
+    }
+    @media only screen and (max-width: 350px) {
+        .f1{
+            font-size: 30px;
+        }
+    }
+
+
+    .f2{
+        font-family: 'NatureBeautyPersonalUse',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+        
+     }
+    .f3{
+        font-family: 'NatureBeautyPersonalUse',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+    }
+    .f4{
+        font-family: 'NatureBeautyPersonalUse',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+    }
+    .bton{
+        border:1px solid white;
+        color: #df94a7;
+        /* border-radius: 15px; */
+       background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 10px;
+        font-size: 15px;
+    }
+    .greek2 h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 20px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0em;
+    line-height: 1em;
+    font-family: Scope One;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: .01em;
+    line-height: 1.3em;
+    text-transform: none;
+    color: #404040;
+    order: 2;
+}
+
+    
+    .greek2 h4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial,Helvetica,sans-serif;
+    font-weight: 700;
+  
+    letter-spacing: 0em;
+    line-height: 1em;
+    font-family: Scope One;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: .01em;
+    line-height: 1.3em;
+    text-transform: none;
+    color: #404040;
+    order: 2;
+    font-size: 25px;
+
+    }
+    .greek2 p{
+        font-size: 20px;
+        font-weight: 700;
+  
+    letter-spacing: 0em;
+    line-height: 1em;
+    font-family: Scope One;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: .01em;
+    line-height: 1.3em;
+    text-transform: none;
+    color: #404040;
+    order: 2;
+    font-size: 22px;
+
+    }
+    .greek3{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+    .greek4 h1{
+        font-size: 20px;
+        font-weight: 700;
+  
+    letter-spacing: 0em;
+    line-height: 1em;
+    font-family: Scope One;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: .01em;
+    line-height: 1.3em;
+    text-transform: none;
+    color: #404040;
+    order: 2;
+    font-size: 40px;
+    padding-left: 40px;
+
+    }
+    .greek4 p{
+        font-size: 20px;
+        padding-left: 40px;
+    }
+    .greek5{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+    .arabic2 h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 20px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0em;
+    line-height: 1em;
+    font-family: Scope One;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: .01em;
+    line-height: 1.3em;
+    text-transform: none;
+    color: #404040;
+    order: 2;
+    }
+    
+    .arabic2 h4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial,Helvetica,sans-serif;
+    font-weight: 700;
+  
+    letter-spacing: 0em;
+    line-height: 1em;
+    font-family: Scope One;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: .01em;
+    line-height: 1.3em;
+    text-transform: none;
+    color: #404040;
+    order: 2;
+    font-size: 25px;
+
+    }
+    .arabic2 h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial,Helvetica,sans-serif;
+    font-weight: 700;
+  
+    letter-spacing: 0em;
+    line-height: 1em;
+    font-family: Scope One;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: .01em;
+    line-height: 1.3em;
+    text-transform: none;
+    color: #404040;
+    order: 2;
+    font-size: 25px;
+
+    }
+    .arabic2 p{
+        font-size: 20px;
+        padding-left: 40px;
+    }
+    .arabic3{
+        padding-left: 140px;
+    }
+    .ara4 h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 20px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0em;
+    line-height: 1em;
+    font-family: Scope One;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: .01em;
+    line-height: 1.3em;
+    text-transform: none;
+    color: #404040;
+    order: 2;
+    }
+    .ara4 p{
+        font-size: 20px;
+        padding-left: 40px;
+    }
+    .indic2 h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 20px;
+        
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0em;
+    line-height: 1em;
+    font-family: Scope One;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: .01em;
+    line-height: 1.3em;
+    text-transform: none;
+    color: #404040;
+    order: 2;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(assets/indic2.jpg);
+    background-size: cover;
+    padding: 20% 20px;
+    background-repeat: no-repeat;
+    font-size: 80px;
+    font-family: 'indic','NatureBeautyPersonalUse',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    
+    .indic2 h4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    font-weight: 700;
+  
+    letter-spacing: 0em;
+    line-height: 1em;
+    font-family: Scope One;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: .01em;
+    line-height: 1.3em;
+    text-transform: none;
+    color: #404040;
+    order: 2;
+    font-size: 25px;
+    font-family: 'indic','NatureBeautyPersonalUse',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    }
+    .indic2 p{
+        
+        padding-left: 40px;
+    
+        font-weight: 700;
+      font-size: 15px;
+        letter-spacing: 0em;
+        line-height: 1em;
+        font-family: Scope One;
+        font-weight: 400;
+        font-style: normal;
+        
+        letter-spacing: .01em;
+        line-height: 1.3em;
+        text-transform: none;
+        color: #404040;
+        order: 2;
+        font-family: 'indic','NatureBeautyPersonalUse',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .ind3{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+ .p1{
+    font-size: 20px;
+    text-align: justify;
+ }
+ @media only screen and (max-width: 1100px) {
+    .p1{
+        font-size: 23px;
+    }
+}
+ @media only screen and (max-width: 730px) {
+    .p1{
+        font-size: 20px;
+    }
+}
+ @media only screen and (max-width: 601px) {
+    .p1{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .p1{
+        font-size: 15px;
+    }
+}
+/* ================footer */
+
+
+a{
+
+    text-decoration: none !important;
+}
+.site-footer
+{
+  /* background-color:#26272b; */
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0;
+  margin-bottom: 0px;
+}
+.site-footer h6
+{
+  color:rgb(82, 2, 68);
+  font-weight: bold;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#ffffff;
+}
+.site-footer a:hover
+{
+  color:rgb(82, 2, 68);
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:rgb(82, 2, 68)
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:rgb(212, 3, 101);
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:rgb(212, 3, 101)
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+.boxx img{
+    height: 250px;
+}
+@media (max-width:1199px)
+{
+    .boxx img{
+        height: 100%;
+    }
+}
+.bton2{
+    color: #e76f9d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================ */
+.arabic{
+    font-size: 65px;
+    font-family: 'arabic','NatureBeautyPersonalUse',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.greek{
+    font-family: 'greek','NatureBeautyPersonalUse',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.indic{
+    font-family: 'indic','NatureBeautyPersonalUse',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}

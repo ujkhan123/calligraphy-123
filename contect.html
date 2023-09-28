@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- ================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+   .body{
+      display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px;
+  background-image: linear-gradient(to right,  #fdf9f5,  #f1ccd5);
+   }
+   .containor{
+  max-width: 800px;
+  background: #fff;
+  width: 800px;
+  height: 500px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.containor .text{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+}
+.containor form{
+  padding: 30px 0 0 0;
+}
+.containor form .fieldbox{
+  display: flex;
+  margin: 32px 0;
+}
+form .fieldbox .inputtext{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+form .fieldbox .textarea{
+  height: 70px;
+}
+
+.inputtext input,
+.textarea textarea{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+.inputtext input:focus ~ label, .textarea textarea:focus ~ label,
+.inputtext input:valid ~ label, .textarea textarea:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #3498db;
+}
+.textarea textarea{
+  resize: none;
+  padding-top: 10px;
+}
+.inputtext label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.textarea label{
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+.inputtext .underline{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.inputtext .underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.inputtext input:focus ~ .underline:before,
+.inputtext input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before{
+  transform: scale(1);
+}
+.submit-btn .inputtext{
+  overflow: hidden;
+  height: 45px!important;
+  width: 25%!important;
+}
+.submit-btn .inputtext .inner{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  transition: all 0.4s;
+}
+.submit-btn .inputtext:hover .inner{
+  left: 0;
+}
+.submit-btn .inputtext input{
+  background: none;
+  border: none;
+  color: #000000;
+  background-color: #56d8e4;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  /* position: relative; */
+  /* z-index: 2 */
+}
+@media (max-width: 700px) {
+  .containor .text{
+    font-size: 30px;
+  }
+  .containor form{
+    padding: 10px 0 0 0;
+  }
+  .containor form .fieldbox{
+    display: block;
+  }
+  form .fieldbox .inputtext{
+    margin: 35px 0!important;
+  }
+  .submit-btn .inputtext{
+    width: 40%!important;
+  }
+}
+
+
+
+</style>
+<body>
+   <div class="top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <img class="" height="30%" width="20%" src="assets/q 2.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navb" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active m-0" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="origin.html">Origin</a>
+              </li>
+              
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item mb-4" href="arabic.html">Arabic Calligraphy</a></li>
+                  <li><a class="dropdown-item mb-4" href="greek.html">Greek Calligraphy</a></li>
+                  <li><a class="dropdown-item" href="indic.html">Indic Calligraphy</a></li>
+                </ul>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="tools.html">Tools</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contect.html">Contact</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    
+ <div class="body">
+   <div class="containor">
+
+      <div class="text"> Contact us</div>
+      <form action="#">
+         <div class="fieldbox">
+            <div class="inputtext">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">First Name</label>
+            </div>
+            <div class="inputtext">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">Last Name</label>
+            </div>
+         </div>
+         <div class="fieldbox">
+            <div class="inputtext">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">Email Address</label>
+            </div>
+            <div class="inputtext">
+               <input type="text" required>
+               <div class="underline"></div>
+               <label for="">Website Name</label>
+            </div>
+         </div>
+         <div class="fieldbox">
+            <div class="inputtext textarea">
+               <textarea rows="8" cols="80" required></textarea>
+               <br />
+               <div class="underline"></div>
+               <label for="">Write your message</label>
+               <br />
+               <div class="fieldbox submit-btn">
+                  <div class="inputtext">
+                     <div class="inner"></div>
+                     <input type="submit" value="submit">
+                     
+                  </div>
+               </div>
+            </div>
+         </div>
+      </form>
+   </div>
+ </div>
+     <br>  <br>
+     <br>
+     <div style="width: 100% ;padding:0;"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=A%20563,%20Main%20Shahrah-e-Usman,%20Sector%2011-A%20Sector%2011%20A%20North%20Karachi%20Twp,%20Karachi,%20Karachi%20City,%20Sindh%2075850+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Population Estimator map</a></iframe></div>
+
+     
+<!-- Site footer -->
+<footer class="site-footer"  style="margin: 50px 0px 0px 0px; background-color: #d38388; padding: 60px 0px; color: rgb(82, 2, 68);">
+   <div class="container">
+     <div class="row">
+       <div class="col-sm-12 col-md-6">
+         <h6>Calligraphy</h6>
+         <p class="text-justify">
+           Arabic<br>
+           Indic<br>
+           Greek<br>
+           <!-- Keywords Sitemap<br>
+           Best Selling Products<br></p> -->
+       </div>
+ 
+       <div class="col-xs-6 col-md-3">
+         <h6>Information</h6>
+         <ul class="footer-links">
+           <li><a href="origin.html">About Us</a></li>
+           <li><a href="contect.html">Contact Us</a></li>
+           <li><a href="#"></a></li>
+           <li><a href="#"></a></li>
+           <li><a href="#"></a></li>
+           <li><a href="#"></a></li>
+         </ul>
+       </div>
+ 
+      
+     </div>
+     <hr>
+   </div>
+   <div class="container">
+     <div class="row">
+       <div class="col-md-8 col-sm-6 col-xs-12">
+         <p class="copyright-text">© 2023 Quick Calligraphy LLC. All Rights Reserved.
+         </p>
+       </div>
+ 
+       <div class="col-md-4 col-sm-6 col-xs-12">
+         <ul class="social-icons">
+           <li><a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+           <li><a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+           <li><a class="dribbble" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+           <li><a class="linkedin" href="#"><i class="fa-brands fa-youtube"></i></i></a></li>   
+         </ul>
+       </div>
+     </div>
+   </div>
+ </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+ </body>
+ </html>
+     
+         
+   
+         
+   
+ 
